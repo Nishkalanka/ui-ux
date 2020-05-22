@@ -2,14 +2,41 @@
     background: #666;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
 }
 
 #main>div {
-    height: 150px;
-    width: 50px;
+    height: auto;
+    width: calc(25% - 10px);
     background: red;
-    align-self: auto;
     margin: 5px;
     display: block;
+    align-self: flex-start;
+}
+
+.wrapper {
+    border: 1px solid #000;
+    height: 500px;
+    width: 680px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
     justify-content: flex-end;
+    flex-direction: row;
+    align-items: stretch;
+    height: 200px;
+    background: #ccc;
+}
+
+.block {
+    width: 50px;
+    background: #fff;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
